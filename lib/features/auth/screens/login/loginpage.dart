@@ -127,7 +127,7 @@ class Loginpage extends StatelessWidget {
                     ),
                     const SizedBox(height: 30),
                     Mycontainer(
-                      child: Boldtext(text: "Login"),
+                      child: Boldtext(text: AppTexts.loginTetx),
                       width: double.maxFinite,
                       height: 50,
                       radius: 12,

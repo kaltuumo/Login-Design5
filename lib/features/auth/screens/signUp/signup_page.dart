@@ -78,7 +78,7 @@ class SignupPage extends StatelessWidget {
 
                     const SizedBox(height: 30),
                     Mycontainer(
-                      child: Boldtext(text: "Login"),
+                      child: Boldtext(text: AppTexts.signUpText),
                       width: double.maxFinite,
                       height: 50,
                       radius: 12,

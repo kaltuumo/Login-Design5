@@ -1,6 +1,6 @@
 class AppTexts {
   static const String loginTetx = "Login";
-
+  static const String signUpText = "Sign Up";
   // Login Page Textfileds etxt/
 
   // Texts By Email
