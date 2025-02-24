@@ -91,16 +91,22 @@ class Loginpage extends StatelessWidget {
                     const SizedBox(height: 20),
                     Row(
                       children: [
-                        Imagecontainer(
-                          width: 150,
-                          height: 50,
-                          imagePath: [AppImages.faceImage],
+                        Expanded(
+                          child: Imagecontainer(
+                            child: Boldtext(text: "Faceebook"),
+                            width: 150,
+                            height: 50,
+                            imagePath: [AppImages.faceImage],
+                          ),
                         ),
                         const SizedBox(width: 40),
-                        Imagecontainer(
-                          width: 150,
-                          height: 50,
-                          imagePath: [AppImages.googImage],
+                        Expanded(
+                          child: Imagecontainer(
+                            child: Boldtext(text: "Google"),
+                            width: 150,
+                            height: 50,
+                            imagePath: [AppImages.googImage],
+                          ),
                         ),
                       ],
                     ),

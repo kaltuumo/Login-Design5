@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:login_design5/utilities/constants/colors.dart';
-import 'package:login_design5/widgets/BoldText.dart';
 
 class Imagecontainer extends StatelessWidget {
   final double width;
   final double height;
+  final Widget child;
   final List<String> imagePath;
   const Imagecontainer({
     super.key,
     required this.width,
     required this.height,
+    required this.child,
     required this.imagePath,
   });
 
@@ -30,7 +31,7 @@ class Imagecontainer extends StatelessWidget {
           for (String imagePath in imagePath)
             Image.asset(imagePath, width: 30, height: 50),
           const SizedBox(width: 5),
-          Boldtext(text: "Facebook", color: AppColors.greenColors),
+          child,
         ],
       ),
     );
