@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_design5/utilities/constants/colors.dart';
 import 'package:login_design5/utilities/constants/icons.dart';
 import 'package:login_design5/utilities/constants/images.dart';
 import 'package:login_design5/utilities/constants/sizes.dart';
@@ -18,9 +19,21 @@ class SignupPage extends StatelessWidget {
         children: [
           Column(
             children: [
-              Padding(padding: const EdgeInsets.all(8.0)),
+              Padding(padding: AppSize.allPadding),
 
-              Image.asset(AppImages.bgImage),
+              Stack(
+                children: [
+                  Image.asset(AppImages.bgImage),
+                  Positioned(
+                    top: 40,
+                    left: 20,
+                    child: Boldtext(
+                      text: "Craete Account",
+                      color: AppColors.whiteColors,
+                    ),
+                  ),
+                ],
+              ),
               const SizedBox(height: 50),
               // Boldtext(text: AppTexts.loginTetx),
               Padding(

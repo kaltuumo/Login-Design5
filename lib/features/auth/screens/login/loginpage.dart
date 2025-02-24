@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:login_design5/features/auth/screens/signUp/signup_page.dart';
+import 'package:login_design5/utilities/constants/colors.dart';
 import 'package:login_design5/utilities/constants/icons.dart';
 import 'package:login_design5/utilities/constants/images.dart';
 import 'package:login_design5/utilities/constants/sizes.dart';
@@ -22,9 +23,23 @@ class Loginpage extends StatelessWidget {
         children: [
           Column(
             children: [
-              Padding(padding: const EdgeInsets.all(8.0)),
+              Padding(padding: AppSize.allPadding),
 
-              Image.asset(AppImages.bgImage),
+              Stack(
+                children: [
+                  Image.asset(AppImages.bgImage),
+                  Positioned(
+                    top: 40,
+                    left: 20,
+                    right: 0,
+                    child: Boldtext(
+                      text: "Hi,\nPlease Login",
+                      color: AppColors.whiteColors,
+                    ),
+                  ),
+                ],
+              ),
+
               const SizedBox(height: 50),
               // Boldtext(text: AppTexts.loginTetx),
               Padding(
@@ -32,7 +47,7 @@ class Loginpage extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Boldtext(text: "Email"),
+                    Boldtext(text: AppTexts.textbyemail),
                     const SizedBox(height: 5),
 
                     Customtextfield(
@@ -41,7 +56,7 @@ class Loginpage extends StatelessWidget {
                       radius: 12,
                     ),
                     const SizedBox(height: 20),
-                    Boldtext(text: "Password"),
+                    Boldtext(text: AppTexts.textbypasword),
                     const SizedBox(height: 10),
                     Customtextfield(
                       title: AppTexts.passText,
@@ -93,7 +108,7 @@ class Loginpage extends StatelessWidget {
                       children: [
                         Expanded(
                           child: Imagecontainer(
-                            child: Boldtext(text: "Faceebook"),
+                            child: Boldtext(text: AppTexts.faceText),
                             width: 150,
                             height: 50,
                             imagePath: [AppImages.faceImage],
@@ -102,7 +117,7 @@ class Loginpage extends StatelessWidget {
                         const SizedBox(width: 40),
                         Expanded(
                           child: Imagecontainer(
-                            child: Boldtext(text: "Google"),
+                            child: Boldtext(text: AppTexts.googText),
                             width: 150,
                             height: 50,
                             imagePath: [AppImages.googImage],

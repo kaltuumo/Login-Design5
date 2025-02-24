@@ -10,4 +10,7 @@ class AppSize {
   // Text Felds And Buttons intey Geesaha Kaoo sikanaayaan
 
   static const EdgeInsets sidesPadding = EdgeInsets.only(left: 15, right: 15);
+
+  // Padding App From All Sides
+  static const EdgeInsets allPadding = EdgeInsets.all(8.0);
 }
